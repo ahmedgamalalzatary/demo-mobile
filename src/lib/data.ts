@@ -289,33 +289,44 @@ export type Branch = {
   pin: { x: number; y: number };
 };
 
+// Addresses from public directory listings for Rosheta pharmacy (Yellow Pages Egypt,
+// Dalil Online, Majesty Card). Distances and hours are demo values.
 export const branches: Branch[] = [
   {
     id: "nasr-city",
     name: "فرع مدينة نصر",
-    address: "شارع عباس العقاد - مدينة نصر",
+    address: "6 بلوك 18 ش الصحابة الكرام، حي السفارات",
     distanceKm: 1.2,
     hours: "24 ساعة",
     open: true,
-    pin: { x: 72, y: 66 },
+    pin: { x: 70, y: 70 },
   },
   {
-    id: "fifth-settlement",
-    name: "فرع التجمع الخامس",
-    address: "التسعين الشمالي - بوينت 90 مول",
-    distanceKm: 5.8,
+    id: "nozha",
+    name: "فرع النزهة",
+    address: "شارع القدس الشريف، النزهة، مصر الجديدة",
+    distanceKm: 6.4,
     hours: "9 ص - 2 ص",
     open: true,
-    pin: { x: 40, y: 36 },
+    pin: { x: 88, y: 50 },
   },
   {
-    id: "mohandessin",
-    name: "فرع المهندسين",
-    address: "شارع جامعة الدول العربية",
-    distanceKm: 8.6,
+    id: "dokki",
+    name: "فرع الدقي",
+    address: "5أ ش باسم الكاتب، متفرع من ش التحرير، الدقي",
+    distanceKm: 14.2,
     hours: "9 ص - 1 ص",
     open: true,
-    pin: { x: 14, y: 70 },
+    pin: { x: 34, y: 48 },
+  },
+  {
+    id: "hadayek-october",
+    name: "فرع حدائق أكتوبر",
+    address: "مول المصرية 1، كمبوند بيت المصرية، حدائق أكتوبر",
+    distanceKm: 38.5,
+    hours: "10 ص - 11 م",
+    open: true,
+    pin: { x: 10, y: 78 },
   },
 ];
 
