@@ -10,7 +10,7 @@ const menu = [
   { href: "/branches", label: "فروعنا", Icon: Store },
   { href: "/account", label: "المفضلة", Icon: Heart },
   { href: "/account", label: "الإشعارات", Icon: Bell },
-  { href: "/account", label: "الدعم والمساعدة", Icon: CircleHelp },
+  { href: "/chat", label: "الدعم والمساعدة", Icon: CircleHelp, badge: "تحدث مع صيدلي" },
   { href: "/account", label: "عن روشتة صيدليات", Icon: Info },
 ];
 

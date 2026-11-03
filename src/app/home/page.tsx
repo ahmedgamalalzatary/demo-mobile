@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Bell, ChevronDown, MapPin, Search } from "lucide-react";
+import { Bell, ChevronDown, MapPin, MessageCircle, Search } from "lucide-react";
 import { categories, featuredSections, getProduct, products } from "@/lib/data";
 import { discountPct } from "@/lib/format";
 import { ProductArt, ProductImage } from "@/components/ProductArt";
@@ -19,10 +19,16 @@ export default function HomePage() {
           فرع مدينة نصر
           <ChevronDown className="size-4" />
         </Link>
-        <button aria-label="الإشعارات" className="relative grid size-10 place-items-center rounded-full text-ink active:bg-mint">
-          <Bell className="size-[22px]" strokeWidth={1.7} />
-          <span className="absolute top-2 right-2.5 size-2 rounded-full border-2 border-mist bg-sale" />
-        </button>
+        <div className="flex items-center">
+          <Link href="/chat" aria-label="تحدث مع صيدلي" className="relative grid size-10 place-items-center rounded-full text-ink active:bg-mint">
+            <MessageCircle className="size-[22px]" strokeWidth={1.7} />
+            <span className="absolute top-2 right-2 size-2.5 rounded-full border-2 border-mist bg-[#3fbf5a]" />
+          </Link>
+          <button aria-label="الإشعارات" className="relative grid size-10 place-items-center rounded-full text-ink active:bg-mint">
+            <Bell className="size-[22px]" strokeWidth={1.7} />
+            <span className="absolute top-2 right-2.5 size-2 rounded-full border-2 border-mist bg-sale" />
+          </button>
+        </div>
       </header>
 
       <div className="px-4">
